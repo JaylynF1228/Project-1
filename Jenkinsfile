@@ -29,7 +29,7 @@ pipeline {
 
         stage('Deploy to EC2') {
             steps {
-                sshagent(['ec2-ssh-key']) {
+                sshagent(['35.175.150.192']) {
                     sh '''
                         ssh -o StrictHostKeyChecking=no ubuntu@35.175.150.192 '
                           docker pull $IMAGE &&
