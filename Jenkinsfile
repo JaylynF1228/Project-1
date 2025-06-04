@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/YOUR_USERNAME/flask-ci-cd-demo.git'
+                git branch: 'main', url: 'https://github.com/JaylynF1228/flask-ci-cd-demo.git'
             }
         }
 
