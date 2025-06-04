@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE = 'your-dockerhub-username/flask-ci-cd'
+        IMAGE = 'ubuntu@35.175.150.192/flask-ci-cd'
     }
 
     stages {
