@@ -14,7 +14,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t jaylyn1228/flask-ci-cd.'
+                sh 'docker build -t jaylyn1228/flask-ci-cd .'
             }
         }
 
