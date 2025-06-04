@@ -8,8 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'git url: 'git@github.com:JaylynF1228/Project-1.git', credentialsId: 'github-ssh'
-'
+                git branch: 'main', url: 'git@github.com:JaylynF1228/Project-1.git', credentialsId: 'github-ssh'
             }
         }
 
@@ -44,4 +43,3 @@ pipeline {
         }
     }
 }
-
