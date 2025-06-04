@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE = 'ubuntu@35.175.150.192/flask-ci-cd'
+        IMAGE = 'jaylynstrickland/flask-ci-cd' // Change to your Docker Hub username
     }
 
     stages {
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sshagent(['ec2-ssh-key']) {
                     sh '''
-                        ssh -o StrictHostKeyChecking=no ubuntu@<EC2-IP> '
+                        ssh -o StrictHostKeyChecking=no ubuntu@35.175.150.192 '
                           docker pull $IMAGE &&
                           docker stop flask || true &&
                           docker rm flask || true &&
